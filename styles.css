@@ -68,3 +68,63 @@ section{padding:72px 0}.section-head{text-align:center;max-width:760px;margin:0 
 .page-hero p{max-width:760px;color:#dbe8fa;margin:0}
 .page-hero .kicker{color:#ffd21a}
 @media(max-width:760px){.nav{justify-content:flex-end;padding:0}.navlinks{display:none;position:absolute;top:50px;left:0;right:0;background:#06275b;padding:12px 5% 20px;flex-direction:column;align-items:flex-start;gap:0;width:auto;white-space:normal}.navlinks.open{display:flex}.navlinks a{padding:10px 0;font-size:14px}}
+
+
+/* Mobile header and hero spacing refinement */
+@media(max-width:760px){
+  .topline .container{
+    display:flex !important;
+    flex-direction:column;
+    align-items:center !important;
+    justify-content:center;
+    gap:5px;
+    min-height:0;
+    padding:7px 0 9px !important;
+  }
+  .brand img{width:112px !important;height:42px !important;object-fit:contain}
+  .top-right{
+    display:grid !important;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    justify-items:center;
+    justify-content:center !important;
+    gap:4px 10px !important;
+    width:100%;
+    margin:0 !important;
+    font-size:10px !important;
+    line-height:1.25;
+  }
+  .top-right a{white-space:nowrap}
+  .top-right .wa{padding:5px 9px !important;border-radius:7px}
+  .header{min-height:44px}
+  .nav{min-height:44px !important;height:44px}
+  .menu{font-size:25px;line-height:1;padding:7px 4px}
+  .navlinks{top:44px !important}
+  .hero-grid{
+    display:flex !important;
+    flex-direction:column;
+    align-items:stretch !important;
+    justify-content:flex-start;
+    gap:18px !important;
+    min-height:0 !important;
+    padding:22px 0 24px !important;
+  }
+  .hero-grid>div:first-child{width:100%;min-width:0}
+  .hero .eyebrow{margin:0}
+  .hero h1{margin:12px 0 10px;font-size:clamp(30px,8vw,38px);line-height:1.06}
+  .hero p{font-size:13px;line-height:1.5;margin-bottom:15px}
+  .hero-visual{height:225px !important;width:100%;grid-template-columns:1.5fr .8fr}
+  .hero-image{height:100% !important}
+  .hero-chip{right:calc(24% + 8px);bottom:8px;font-size:10px;padding:6px 10px}
+}
+@media(max-width:480px){
+  .topline .container{padding:6px 0 8px !important}
+  .brand img{width:104px !important;height:38px !important}
+  .top-right{font-size:9px !important;gap:4px 7px !important}
+  .top-right .wa{font-size:9px;padding:5px 7px !important}
+  .nav{height:42px !important;min-height:42px !important}
+  .navlinks{top:42px !important}
+  .hero-grid{padding:18px 0 20px !important;gap:15px !important}
+  .hero h1{font-size:32px;line-height:1.05}
+  .hero-visual{height:200px !important}
+}

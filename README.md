@@ -21,3 +21,6 @@ Upload the files and folders from this package into the root of your existing re
 Then go to **Settings → Pages → Deploy from a branch → main → /(root)**.
 
 The CCTV and inverter hero images are illustrative visuals, not photos of completed SHOWSAT jobs. No sample customer reviews are included.
+
+## Mobile layout update
+The mobile header has been compacted, contact links are arranged in a tidy two-column layout, the navigation bar is shorter, and the hero content starts closer to the header to remove the excessive blank space.
